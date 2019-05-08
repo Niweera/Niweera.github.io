@@ -326,9 +326,9 @@
 	.pad_btm {
 		padding-bottom: 70px;
 	}
-	.home_banner_area .banner_inner .home_left_img {
+	/* .home_banner_area .banner_inner .home_left_img {
 		display: none;
-	}
+	} */
 	.home_banner_area .banner_inner .banner_content {
 		padding-top: 0px;
 	}
