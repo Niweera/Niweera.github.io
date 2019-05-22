@@ -22,14 +22,8 @@
 	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
 		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
-	<script type="text/x-mathjax-config">
-			MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-		</script>
-	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>
-
 </head>
+	<link rel="stylesheet" href="css/heroku.css">
 
 <body>
 
@@ -132,7 +126,7 @@
 									</div>
 									<div class="col-md-8 col-sm-8 col-8">
 										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="40"
+											<div class="progress-bar" role="progressbar" aria-valuenow="50"
 												aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
 									</div>
@@ -193,7 +187,7 @@
 							<div class="skill_item mb-0">
 								<div class="row">
 									<div class="col-md-4 col-sm-4 col-4 text-center">
-										<h4>Firebase</h4>
+										<h4>Cloud Firestore</h4>
 									</div>
 									<div class="col-md-8 col-sm-8 col-8">
 										<div class="progress">
@@ -210,7 +204,7 @@
 									</div>
 									<div class="col-md-8 col-sm-8 col-8">
 										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="30"
+											<div class="progress-bar" role="progressbar" aria-valuenow="35"
 												aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
 									</div>
@@ -240,6 +234,45 @@
 												aria-valuemin="0" aria-valuemax="100"></div>
 										</div>
 									</div>
+								</div>
+							</div>
+							<div class="skill_item mb-0">
+								<div class="row">
+									<div class="col-md-4 col-sm-4 col-4 text-center">
+										<h4>Node.JS</h4>
+									</div>
+									<div class="col-md-8 col-sm-8 col-8">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="30"
+												aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="skill_item mb-0">
+								<div class="row">
+									<div class="col-md-4 col-sm-4 col-4 text-center">
+										<h4>ExpressJS</h4>
+									</div>
+									<div class="col-md-8 col-sm-8 col-8">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="30"
+												aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<br><br>
+							<h3 class="mb-3">Platform Exposure</h3>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-4 text-center">
+									<i class="icon-heroku"></i> &nbsp; Heroku
+								</div>
+								<div class="col-md-4 col-sm-4 col-4 text-center">
+									<i class="fab fa-google"></i> &nbsp; GCP
+								</div>
+								<div class="col-md-4 col-sm-4 col-4 text-center">
+									<i class="fab fa-aws"></i> &nbsp; AWS 
 								</div>
 							</div>
 						</div>
@@ -414,7 +447,7 @@
 				<div class="col-lg-4 col-sm-6 brand">
 					<div class="projects_item">
 						<img class="img-fluid" src="img/projects/15505.jpg" alt="">
-						<div class="projects_text">
+						<div class="projects_text" id="gp">
 							<a href="https://gp.niweera.gq" target="_blank">
 								<h4 style="color:white">Patient & Inventory Management System</h4>
 							</a>
@@ -422,8 +455,10 @@
 								system for managing clinic patients and the drug
 								store inventory.
 								<br>-Technologies: PHP, Bootstrap, JavaScript, jQuery, Ajax, MySQL
-								<br><a href="https://github.com/Niweera/gp" target="_blank"><i
-										class="fab fa-github"></i> https://github.com/Niweera/gp</a>
+								<br>-Hosted on Ubuntu VM over GCP cloud infrastructure.
+							</p>
+							<p id="gpp">
+								<!-- Data will appear here created by javascript file -->
 							</p>
 						</div>
 					</div>
@@ -431,15 +466,17 @@
 				<div class="col-lg-4 col-sm-6 brand">
 					<div class="projects_item">
 						<img class="img-fluid" src="img/projects/3132.jpg" alt="">
-						<div class="projects_text">
+						<div class="projects_text" id="wgp">
 							<a href="https://wgp.niweera.gq" target="_blank">
 								<h4>FIND LANKA</h4>
 							</a>
 							<p><a href="https://wgp.niweera.gq" target="_blank">https://wgp.niweera.gq</a><br>-Web based
 								platform to find technical support for users.
 								<br>-Technologies: PHP, HTML, CSS, JavaScript, MySQL
-								<br><a href="https://github.com/Niweera/wgp" target="_blank"><i
-										class="fab fa-github"></i> https://github.com/Niweera/wgp</a>
+								<br>-Hosted on Ubuntu VM over GCP cloud infrastructure.
+							</p>
+							<p id="wgpp">
+								<!-- Data will appear here created by javascript file -->
 							</p>
 						</div>
 					</div>
@@ -447,8 +484,8 @@
 				<div class="col-lg-4 col-sm-6 brand">
 					<div class="projects_item">
 						<img class="img-fluid" src="img/projects/1511.jpg" alt="">
-						<div class="projects_text">
-							<a href="https://nutribuddy.niweera.gq" target="_blank">
+						<div class="projects_text" id="NutriBuddy2">
+							<a href="https://nutribuddy.abhg.gq" target="_blank">
 								<h4>NutriBuddy</h4>
 							</a>
 							<p><a href="https://nutribuddy.niweera.gq"
@@ -456,8 +493,10 @@
 								personalized nutritional facts
 								of the food for users.
 								<br>-Technologies: JavaScript, Firebase Cloud Firestore, Bootstrap
-								<br><a href="https://github.com/lahiruc/NutriBuddy2" target="_blank"><i
-										class="fab fa-github"></i> https://github.com/lahiruc/NutriBuddy2</a>
+								<br>-Hosted on <a href="https://zeit.co/now" target="_blank">Zeit.co/Now</a> Serverless platform.
+							</p>
+							<p id="NutriBuddy2p">
+								<!-- Data will appear here created by javascript file -->
 							</p>
 						</div>
 					</div>
@@ -465,15 +504,16 @@
 				<div class="col-lg-4 col-sm-6 work">
 					<div class="projects_item">
 						<img class="img-fluid" src="img/projects/1907.jpg" alt="">
-						<div class="projects_text">
+						<div class="projects_text" id="tvdb">
 							<a href="https://tvdb.niweera.gq" target="_blank">
 								<h4>Niweera TVDB (v1.0)</h4>
 							</a>
 							<p><a href="https://tvdb.niweera.gq" target="_blank">https://tvdb.niweera.gq</a><br>Niweera
-								TVDB developed using pure PHP, MySQL and JavaScript, hosted on Ubuntu VM over GCP cloud
+								TVDB developed using pure PHP, MySQL and JavaScript hosted on Ubuntu VM over GCP cloud
 								infrastructure.
-								<br><a href="https://github.com/Niweera/tvdb" target="_blank"><i
-										class="fab fa-github"></i> https://github.com/Niweera/tvdb</a>
+							</p>
+							<p id="tvdbp">
+								<!-- Data will appear here created by javascript file -->
 							</p>
 						</div>
 					</div>
@@ -481,15 +521,16 @@
 				<div class="col-lg-4 col-sm-6 work">
 					<div class="projects_item">
 						<img class="img-fluid" src="img/projects/5149.jpg" alt="">
-						<div class="projects_text">
+						<div class="projects_text" id="tvdbnew">
 							<a href="https://tvdbnew.niweera.gq" target="_blank">
 								<h4>Niweera TVDB (v2.0)</h4>
 							</a>
 							<p><a href="https://tvdbnew.niweera.gq"
 									target="_blank">https://tvdbnew.niweera.gq</a><br>Niweera TVDB developed using PHP
 								Laravel Framework, Bootstrap, MySQL and JavaScript, hosted on Heroku cloud platform.
-								<br><a href="https://github.com/Niweera/tvdbnew" target="_blank"><i
-										class="fab fa-github"></i> https://github.com/Niweera/tvdbnew</a>
+							</p>
+							<p id="tvdbnewp">
+								<!-- Data will appear here created by javascript file -->
 							</p>
 						</div>
 					</div>
@@ -497,15 +538,16 @@
 				<div class="col-lg-4 col-sm-6 work">
 					<div class="projects_item">
 						<img class="img-fluid" src="img/projects/2144.jpg" alt="">
-						<div class="projects_text">
+						<div class="projects_text" id="angulartvdb">
 							<a href="https://niweera.gq/angulartvdb" target="_blank">
 								<h4>Niweera TVDB (v3.0)</h4>
 							</a>
 							<p><a href="https://niweera.gq/angulartvdb"
 									target="_blank">https://niweera.gq/angulartvdb</a><br>Niweera TVDB developed using
 								AngularJS, Bootstrap and Firebase Cloud Firestore, hosted on Github pages.
-								<br><a href="https://github.com/Niweera/angulartvdb" target="_blank"><i
-										class="fab fa-github"></i> https://github.com/Niweera/angulartvdb</a>
+							</p>
+							<p id="angulartvdbp">
+								<!-- Data will appear here created by javascript file -->
 							</p>
 						</div>
 					</div>
@@ -513,7 +555,7 @@
 				<div class="col-lg-4 col-sm-6 work">
 					<div class="projects_item">
 						<img class="img-fluid" src="img/projects/7123.jpg" alt="">
-						<div class="projects_text">
+						<div class="projects_text" id="reacttvdb">
 							<a href="https://reacttvdb.niweera.gq" target="_blank">
 								<h4>Niweera TVDB (v4.0)</h4>
 							</a>
@@ -521,8 +563,9 @@
 									target="_blank">https://reacttvdb.niweera.gq</a><br>Niweera
 								TVDB developed using ReactJS, Bootstrap and Firebase Cloud Firestore, hosted on Firebase
 								hosting.
-								<br><a href="https://github.com/Niweera/reacttvdb" target="_blank"><i
-										class="fab fa-github"></i> https://github.com/Niweera/reacttvdb</a>
+							</p>
+							<p id="reacttvdbp">
+								<!-- Data will appear here created by javascript file -->
 							</p>
 						</div>
 					</div>
@@ -530,15 +573,33 @@
 				<div class="col-lg-4 col-sm-6 work">
 					<div class="projects_item">
 						<img class="img-fluid" src="img/projects/14885.jpg" alt="">
-						<div class="projects_text">
+						<div class="projects_text" id="merntvdb">
 							<a href="https://niweeratvdb.gq" target="_blank">
 								<h4>Niweera TVDB (v5.0)</h4>
 							</a>
 							<p><a href="https://niweeratvdb.gq" target="_blank">https://niweeratvdb.gq</a><br>Niweera
 								TVDB developed using MERN Stack: MongoDB, ExpressJS, ReactJS, Node.JS, and Bootstrap,
 								hosted on Heroku cloud platform.
-								<br><a href="https://github.com/Niweera/merntvdb" target="_blank"><i
-										class="fab fa-github"></i> https://github.com/Niweera/merntvdb</a>
+							</p>
+							<p id="merntvdbp">
+								<!-- Data will appear here created by javascript file -->
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 work">
+					<div class="projects_item">
+						<img class="img-fluid" src="img/projects/6656.jpg" alt="">
+						<div class="projects_text" id="niweeratvdb-api">
+							<a href="https://api.niweera.gq" target="_blank">
+								<h4>Niweera TVDB API (v1.0)</h4>
+							</a>
+							<p><a href="https://api.niweera.gq" target="_blank">https://api.niweera.gq</a><br>Niweera
+								TVDB API developed using MongoDB, ExpressJS, and Node.JS
+								hosted on Heroku cloud platform.
+							</p>
+							<p id="niweeratvdb-apip">
+								<!-- Data will appear here created by javascript file -->
 							</p>
 						</div>
 					</div>
@@ -660,7 +721,8 @@
 
 
 
-
+	<!-- Javascript file to get the repo details -->
+	<script src="niweera-github-api-scripts.js"></script>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
