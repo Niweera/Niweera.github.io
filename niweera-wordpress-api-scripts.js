@@ -1,9 +1,4 @@
 var repoNamesArray = [];
-var featuredJPG = {
-  404: "img/blog/1.jpg",
-  287: "img/blog/2.jpg",
-  198: "img/blog/3.jpg"
-};
 var br = "<br>";
 
 function mainFunction() {
@@ -20,6 +15,8 @@ function createInnerHTMLFunction(item) {
     })
     .then(data => {
       // Work with JSON data here
+	  
+	  var src = data.better_featured_image.source_url;
 
       //write the API data to the website
       if (item.id !== "404") {
@@ -29,11 +26,7 @@ function createInnerHTMLFunction(item) {
                                                             <a href="${
                                                               data.link
                                                             }" target="_blank"><img
-                                                                    class="img-fluid" src="${
-                                                                      featuredJPG[
-                                                                        item.id
-                                                                      ]
-                                                                    }" alt=""></a>
+                                                                    class="img-fluid" src="${src}" alt=""></a>
                                                         </div>
                                                         <div class="l_blog_text">
                                                             <div class="date">
@@ -64,12 +57,7 @@ function createInnerHTMLFunction(item) {
                                                                 <a href="${
                                                                   data.link
                                                                 }" target="_blank"><img
-                                                                        class="img-fluid" src="${
-                                                                          featuredJPG[
-                                                                            item
-                                                                              .id
-                                                                          ]
-                                                                        }" alt=""></a>
+                                                                        class="img-fluid" src="${src}" alt=""></a>
                                                             </div>
                                                             <div class="l_blog_text">
                                                                 <div class="date">
