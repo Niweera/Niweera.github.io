@@ -2,4 +2,4 @@
 Official Website of Nipuna Weerasekara
 
 
-![Image Here](https://cdn.niweera.gq/9wyTOOHDXy.gif)
+![Niweera.GQ in a nutshell](9wyTOOHDXy.gif)
